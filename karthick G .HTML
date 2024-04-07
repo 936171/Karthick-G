@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>KARTHICK PORTFOLIO</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .content {
+        padding: 20px;
+      }
+      
+      header {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav {
+        margin-top: 10px;
+      }
+      
+      nav a {
+        color: #666766;
+        text-decoration: none;
+        margin: 0 10px;
+        
+      }
+      h8 {
+        letter-spacing: 3px;
+        
+      }
+
+
+
+      
+
+
+
+
+
+
+     
+      .btn {
+        padding: 1.1em 2em;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #131313;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #ecd448;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+       }
+       
+       .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-150%, -50%);
+        transition: all 0.5s;
+       }
+       
+       .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+       }
+       
+       .btn:hover::before {
+        transform: skewX(30deg) translate(150%, -50%);
+        transition-delay: 0.1s;
+       }
+       
+       .btn:active {
+        transform: scale(0.9);
+       }
+
+
+
+
+
+       #pic
+       {
+        padding-left:200px;
+        padding-top:20px;
+        display:flex;
+        border-radius:30px;
+       }
+       #pic
+       {
+        padding-left:80px;
+        display:flex;
+       }
+       #pic1{
+       margin-left:20px;
+       height:450px;
+       width:400px;
+       border-radius:7%;
+       background-color: #180545; 
+       }
+       #pic2{
+        margin-left:20px;
+        height:450px;
+        width:400px;
+        border-radius:7%;
+        background-color: #FFE800;
+       }
+       #pic3{
+        margin-left:20px;
+        height:450px;
+        width:400px;
+        border-radius:7%;
+        background-color: #E04343;
+       }
+       #img7{
+        padding-left:40px;
+        padding-top:40px;
+       }
+       #img8{
+        padding-left:40px;
+        padding-top:40px;
+       }
+       #img9{
+        padding-left: 40px;
+        padding-top: 40px;
+       }
+
+
+       #ABOUT{
+        display: flex;
+       }
+       #img1{
+        height:300px;
+        width:400px;
+        padding-top:50px;
+        padding-left:100px;
+       }
+       #ABOUT{
+        padding-left:0px;
+        padding-top:100px;
+        padding-right:250px;
+        width:100%;
+       }
+       .aboutus1{
+        display:flex;
+       }
+       #img2{
+        height:300px;
+        width:400px;
+        padding-right:100px;
+        padding-top:100px;
+       }
+       #about1{
+        padding-right:0px;
+        padding-top:100px;
+        padding-left:150px;
+        width:100%;
+       }
+
+
+
+
+
+
+       .imc{
+        display:flex;
+        justify-content:space-evenly;
+       }
+       .imc img{
+        width:10px;
+        height:500px;
+        Border:1px solid;
+        Border:2px solid #666766;
+        border-left-color:#666766;
+        border-right-color:#666766;
+        border-top-color:#666766;
+        box-shadow:#666766;
+       }
+       .imc img:hover{
+        width: 900px;
+        border-radius:25px;
+        box-shadow:aqua;
+       }
+
+
+
+      
+
+
+       
+      
+     
+      
+      
+      
+     
+</style> 
+
+
+ 
+      
+
+<body>
+
+  <header>
+ 
+
+
+    <div class="row">
+      <div>
+        <div class="loader"></div>
+        <h1>
+          H<span style="color:#E04343;">I...</span>IAM<br/>
+          <span>KART<span style="color:#FFE800">HICK</span>.....G</span>
+        </h1>
+        <h8><span class="rotate">WEB DESIGNER,FRONT END DEVELOPER,UI/UX DESIGNER,E-COMMERCE PRODUCTER DESIGNER</span></h8><!-- Text Rotator -->
+      </div>
+    </div>
+
+
+
+   
+
+    <h1>
+        <span style="color:#666766;">I </span><span style="color:#666766;">LOVE</span> <span style="color:#666766;">CODING</span></h1>
+    <nav>
+      <a href="#HOME">HOME</a>
+      <a href="#99ABOUT">ABOUT</a>
+      <a href="#100SKILLS">SKILLS</a>
+      <a href="#2018EDUCATION">EDUCATION</a>
+      <a href="#2048CAREER BREAK">CAREER BREAK</a>
+      <a href="#654WORK EXPERIENCE">WORK EXPERIENCE</a>
+      <a href="#PORTFOLIO NEW LIBRARY">PORTFOLIO NEW LIBRARY</a>
+    </nav>
+<!-- 325 -->
+
+
+  
+
+
+ 
+<!-- 1 -->
+
+
+
+  <div id="HOME">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="01.jpg" class="d-block w-100" alt="..."width="300" height="700">
+      </div>
+      <div class="carousel-item">
+        <img src="02.jpg" class="d-block w-100" alt="..."width="300" height="700">
+      </div>
+      <div class="carousel-item">
+        <img src="03.jpg" class="d-block w-100" alt="..."width="300" height="700">
+      </div>
+    </div>
+  </div>
+  </div>
+
+<br>
+
+
+ <div id="99ABOUT">
+  <div>
+    <button Class="btn">ABOUT</button>
+    <p><span style="color:#6d716d;">Experienced Front-End Developer proficient in (HTML,CSS,JAVASCRIPT,JQUERY,BOOTSTRAP 5,REACT) Dedicated to Crafting Visually Appealing and Responsive User Interfaces for Optimal User Experiences. Strong Collaboration Skills With a Keen eye for design details.</span></p>
+    <hr>
+    <p class="mb-0"><span style="color:#6d716d;">I'M a User Experience(UX Product Designee,Front-End Developer,Web Designer). I Love to Work together with Software and Design Firms,Communicating application Design Principles and Strategies for Ongoing Development.</span></p>
+  </div>
+ </div>
+
+<br>
+<div id="100SKILLS">
+  <div>
+  <button class="btn"> SKILLS
+  </button>
+</div>
+
+
+<div>
+  <div class="alert alert-primary" role="alert">
+    <span style="color:#a52b2b;">HTML5 || CSS || JAVASCRIPT || JQUERY || BOOTSTRAP 5 || REACT </span>
+  </div>
+  <div class="alert alert-secondary" role="alert">
+    <span style="color:#000000;">ADOBE PHOTOSHOP CC 2024 || FIGMA || ADOBE PREMIERE PRO || EDIUS 9 </span>
+  </div>
+  <div class="alert alert-success" role="alert">
+    <span style="color:#6d716d;">SENIOR GRADE TYPEWRITING ENGLISH AND TAMIL</span>
+  </div>
+</div>
+</div>
+<br>
+
+
+
+
+<div id="2018EDUCATION">
+<div>
+  <button class="btn"> EDUCATION
+  </button>
+</div>
+
+
+<div>
+  
+  <button type="button" class="btn btn-warning">UG</button>
+  
+  <button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+  BSC(COMPUTER SCIENCE) @ VYSYA COLLEGE 2018 BATCH || PERIYAR UNIVERSITY 
+  </button>
+  <br>
+
+ 
+</div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+<div id="2048CAREER BREAK">
+<div>
+  <button class="btn"> CAREER BREAK
+  </button>
+</div>
+
+
+
+
+
+<div id="pic">
+  <div id="pic1">
+  <div id="img7">
+   <img src="04.jpg" style="height:200px"width="200px";>
+   <h2 style="color:rgb(255, 255, 255);">FRONT-END DEVELOPER WEB DESIGNER </h2>
+   <h5 style="color:rgb(255, 251, 251)">Livewire software training centre completed web design course</h5> 
+  </div> 
+  </div>
+
+
+
+
+<div id="pic2">
+ 
+  <div id="img8">
+   <img src="05.jpg" style="height:200px"width="200px";>
+   <h2 style="color:rgb(255, 255, 255);">FIGMA</h2>
+   <h5 style="color:rgb(255, 253, 253)">Futogen  software training centre completed Figma course</h5> 
+  </div> 
+  </div>
+
+
+
+<div id="pic3">
+  
+  <div id="img9">
+   <img src="08.jpg" style="height:200px"width="200px";>
+   <h2 style="color:rgb(255, 255, 255);"> UX DESIGN</h2>
+   <h5 style="color:rgb(255, 255, 255)">CCI Softer training centre completed diploma PGDDTP Course</h5> 
+  </div> 
+  </div>
+</div>
+</div>
+
+
+
+<br>
+
+
+<div id="654WORK EXPERIENCE">
+  <div>
+    <button class="btn"> WORK EXPERIENCE
+    </button>
+  </div>
+<div id ="ABOUT">
+  <img src="11.jpg"id="img1">
+  <div id="about1">
+  <h2 style="color:#FFE800;;">INFOSYS BPM (29-JUL-2019 - 05-SEP-2019) </h2>
+  <br>
+  <P style="Color:white"> 3 Moths Experience in Process Exective in Infosys BPM.,pvt.td,26/3,26/4 Hosur Road, Electronics city Bengalur-560 100.</P> 
+  </div>
+</div>
+
+<div class="aboutus1">
+<div id="about1">
+  <h2 style="color:#FFE800;;">AMAZON DEVELOPER CENTER (19-OCT-2019 - 31-OCT-2022)</h2>
+  <br>
+  <P style="Color:white"> I have 3 Years  experience in ( Ux Product Designer,HTML5 and CSS5 Developer)in Shreejan Associates and Worked in Client Side for Full Time Employee.
+    (Client Company Name- Amazon Pvt-Ltd, Chennai Global info City).</P>
+
+
+</div> 
+<img src="10.jpg"id="img2"> 
+</div>
+
+<div id ="ABOUT">
+  <img src="12.jpg"id="img1">
+  <div id="about1">
+  <h2 style="color:#FFE800;;">GRT JEWELLERS (INDIA)PVT LTD ( 01-FEB-2023 - 31-JULY-2023) </h2>
+  <br>
+  <P style="Color:white"> GRT PVT LTD 6 Months Experience (Associate - Ecommerce - Jeweller Product Designer).</P> 
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<Br>
+
+
+<div>
+  <button class="btn"> PORTFOLIO LIBRARY
+  </button>
+</div>
+
+<br>
+
+
+
+<div id="PORTFOLIO NEW LIBRARY">
+  <div class="imc">
+    <img src="72.jpg">
+    <img src="73.jpg">
+    <img src="74.jpg">
+    <img src="75.jpg">
+    <img src="76.jpg">
+    <img src="77.jpg">
+    <img src="78.jpg">
+    <img src="80.jpg">
+    <img src="81.jpg">
+    <img src="82.jpg">
+    <img src="83.jpg">
+    <img src="84.jpg">
+    <img src="85.jpg">
+    <img src="86.jpg">
+
+
+
+ </div>
+</div>
+<br>
+
+<div id ="END">
+  <img src="100.jpg"id="img 150"alt="...."height="150px"width="1200px">
+
+  <p>This is the main content of your Website</p>
+  
+  <p>2024 your website All Rigts Reserved (jkfountenddeveloper@gmail.com)</p>
+
+</footer>
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+</header>
+</body>
+</html>
